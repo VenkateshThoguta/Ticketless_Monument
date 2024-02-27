@@ -57,7 +57,7 @@ export default function Editmonument() {
   }
   return (
     <div>
-      <h1>{monumentid}</h1>
+      
       <div className='text-left'>
         <div className='row justify-content-center'>
           <div className='col-md-10'>
@@ -78,6 +78,7 @@ export default function Editmonument() {
 
 
         <h1>Edit Monument</h1>
+        <h1>MonumentId : {monumentid}</h1>
         {loading}
         {error}
         {esuccess}

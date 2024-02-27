@@ -24,7 +24,8 @@ export default function Addnewmonument() {
     }
     console.log(monument)
     dispatch(addMonument(monument))
-    
+    alert("Monument added Successfully")
+    window.location.href='/admin/monumentlist'
   }
   
 
