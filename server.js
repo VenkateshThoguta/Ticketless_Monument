@@ -12,17 +12,17 @@ const monuRoute=require('./routes/monuRoute')
 app.use('/api/monuments',monuRoute)
 app.use('/api/users',userRoute)
 
-if(process.env.NODE_ENV==='production'){
-    app.use(express.static(path.join(__dirname,'/client/public')))
-    app.get('*',(req,res)=>{
-        res.sendFile(path.resolve(__dirname,"client","public","index.html"))
-    })
-}
-else{
+// if(process.env.NODE_ENV==='production'){
+//     app.use(express.static(path.join(__dirname,'/client/public')))
+//     app.get('*',(req,res)=>{
+//         res.sendFile(path.resolve(__dirname,"client","public","index.html"))
+//     })
+// }
+// else{
     app.get('/',(req,res)=>{
         res.send(  'server working')
     })
-}
+// }
 
 
 

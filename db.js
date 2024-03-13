@@ -1,6 +1,6 @@
 const mongoose=require('mongoose')
 
-var url='mongodb+srv://venkatesh:venky@cluster0.qjp96tg.mongodb.net/ticketless'
+var url='mongodb+srv://venkatesh:Venky1234@cluster0.qjp96tg.mongodb.net/ticketless'
 
 mongoose.connect(url,{useUnifiedTopology:true,useNewUrlParser:true})
 
